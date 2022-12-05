@@ -10,20 +10,28 @@ import org.junit.jupiter.api.Test
 internal class Day05Test
 {
     private val input = """
-        TODO INPUT
+            [D]    
+        [N] [C]    
+        [Z] [M] [P]
+         1   2   3 
+        
+        move 1 from 2 to 1
+        move 3 from 1 to 3
+        move 2 from 2 to 1
+        move 1 from 1 to 2
     """.trimIndent().split("\n")
 
     @Test
     @DisplayName("Part 1")
     fun part1()
     {
-        Assertions.assertEquals(0, Day05().part1(input))
+        Assertions.assertEquals("CMZ", Day05().part1(input))
     }
 
     @Test
     @DisplayName("Part 2")
     fun part2()
     {
-        Assertions.assertEquals(0, Day05().part2(input))
+        Assertions.assertEquals("MCD", Day05().part2(input))
     }
 }
