@@ -61,7 +61,7 @@ class Day09 : AoCPuzzle(9)
                     "D" -> headPos += Point( 0 , 1)
                 }
                 allTailPos[0] = getTailPos(allTailPos[0], headPos)
-                for (i in 0 until allTailPos.size)
+                for (i in 0 until 8)
                 {
                     allTailPos[i+1] = getTailPos(allTailPos[i+1], allTailPos[i])
                 }
